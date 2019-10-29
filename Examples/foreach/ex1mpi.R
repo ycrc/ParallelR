@@ -30,5 +30,6 @@ results <- foreach(trial=1:nstarts) %dopar% {
 
 print(results)
 
+# This is important, or job won't finish
 closeCluster(cl)
 mpi.quit()

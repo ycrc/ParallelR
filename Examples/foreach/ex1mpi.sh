@@ -4,14 +4,7 @@
 #SBATCH -p scavenge
 #SBATCH --mail-type=all
 
-#doesn't work, incompativle with DOMPI
-#module load Apps/R/3.1.1-generic
-
-module load Apps/R/3.1.3-generic
-
-
-module load Rpkgs/DOMPI
-
-#module load Apps/R Rpkgs/DOMPI
+module load miniconda
+source activate parallel_r
 
 mpirun R --slave -f ex1mpi.R

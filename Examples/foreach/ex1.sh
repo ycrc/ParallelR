@@ -4,6 +4,7 @@
 #SBATCH -p scavenge
 #SBATCH --mail-type=all
 
-module load Apps/R Rpkgs/DOPARALLEL
+module load miniconda
+source activate parallel_r
 
 R --slave -f ex1.R
