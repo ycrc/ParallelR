@@ -8,7 +8,7 @@ nstarts=20
 source('spin.R')
 
 f<-function(k) {
-spin(10)
+spin(3)
 k*k
 }
 
